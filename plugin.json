@@ -1,0 +1,22 @@
+{
+    "name": "Fotomoto",
+    "version": "1.0",
+    "description": "Automatically add Fotomoto code to any theme.",
+    "author": {
+        "name": "Marcel Hauri",
+        "link": "https://github.com/mhauri"
+    },
+
+    "data": {
+        "store_id": {
+            "label": "Store ID",
+            "info": "You can find your Store ID by logging into my.fotomoto.com, clicking Settings",
+            "type": "string",
+            "validation": {
+                "type": "regex",
+                "rule":	"^[0-9a-zA-Z]{40}$",
+                "error_message": "Not a valid Store ID. It should be in this format: fb8e667c97fa2958e724c9ba0bcc980006223daa"
+            }
+        }
+    }
+}
